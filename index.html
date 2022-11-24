@@ -134,9 +134,66 @@
 
             </div>
         </article>
+        <article>
+            <div class="page-container-servicos">
+                <div class="page-container-service">
+                    <img src="img/1.png" class="icone">
+                    <h3>Fábrica de Software</h3>
+                    <p>Com processos e recursos bem definidos, seguimos metodologias ágeis par construir softwares
+                        únicos e inovadores</p>
+                </div>
+                <div class="page-container-service">
+                    <img src="img/2.png" class="icone">
+                    <h3>Inteligência Artificial
+                    </h3>
+                    <p>Treinar e aprimorar maquinas para realizarem atividades humanas de forma rápida e eficiente,
+                        aplicamos I.A em nossas soluções para otimizar processos dos clientes</p>
+                </div>
+                <div class="page-container-service">
+                    <img src="img/3.png" class="icone">
+                    <h3>Transformação Digital</h3>
+                    <p>Utilizamos a tecnologia para criar ou mudar o funcionamento de negócios, culturas e experiências
+                        de todos</p>
+                </div>
+
+
+            </div>
+        </article>
+
+
+        <article class="clientes">
+            <h2>Nossos Clientes</h2>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/petrobras.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/droga15.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/lindt.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/maplebear.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/emblogo.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/rioenergy.png" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+
+
+        </article>
 
         <article class="equipe">
-            <img src="img/BannerTeam.png">
+            <img src="img/BannerTeam.png" class="time">
             <div class="box">
                 <p> Nosso time está ansioso para te ajudar!</p>
                 <a href="#" class="linha tracking-out-contract">
@@ -146,33 +203,7 @@
             </div>
         </article>
 
-        <article>
-            <div class="page-container" id="sessao1">
-                <div id="particles-js "></div>
 
-                <h2>HISTÓRIA DA SYMPROPY</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nisi ut, commodi nemo ratione fuga
-                    dignissimos amet exercitationem laboriosam suscipit quidem totam officiis doloribus. Velit et qui
-                    voluptate veritatis omnis!</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ratione nam, provident eaque dolorem
-                    quae.
-                </p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quibusdam laboriosam deserunt,
-                    quidem saepe magnam veniam reiciendis. Quisquam veniam nisi, porro numquam doloremque, saepe
-                    inventore non accusantium facere repellat quibusdam!</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A praesentium laudantium maxime magnam eaque
-                    perspiciatis nostrum odio, ipsa officiis in aspernatur eum, inventore asperiores atque aperiam
-                    dolorum fugiat? Cumque ea eum velit asperiores, autem impedit accusantium quisquam, inventore iste
-                    deleniti eius ut iure nobis? Fugiat quos molestiae sequi voluptatum cum odio harum earum aperiam est
-                    minima! Dolor expedita dicta necessitatibus earum molestias aliquam suscipit quaerat quis fugit,
-                    alias nulla eveniet facere obcaecati cupiditate autem. Fugiat aspernatur hic minus architecto rem
-                    ullam quod optio veritatis incidunt dolorem omnis deleniti ipsa neque, blanditiis nihil adipisci.
-                    Deleniti totam necessitatibus consequuntur harum illo temporibus!</p>
-            </div>
-        </article>
 
         <footer>
             <div class="logo-box">
@@ -204,9 +235,34 @@
         <!-- </div> -->
     </main>
     <!-- <script type="module" src="/script.js"></script> -->
-
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
     <script src="js/particles.min.js"> </script>
     <script src="js/app.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cube",
+            grabCursor: true,
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
 </body>
 
 </html>
