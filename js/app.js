@@ -104,7 +104,7 @@ particlesJS(
               "duration": 0.4
             },
             "push": {
-              "particles_nb": 20
+              "particles_nb": 15
             },
             "remove": {
               "particles_nb": 2

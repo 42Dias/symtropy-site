@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
     <title>Symtropy</title>
 </head>
@@ -20,8 +21,8 @@
 
         <!-- <div class="hero"> -->
         <header>
-            <div class="logo-box">
-                <a href="#"><img src="assets/images/logo.png" class="logo ">
+            <div class="logo-box ">
+                <a href="#"><img src="assets/images/logo.png" class="logo rotate-vert-center ">
                 </a>
             </div>
             <div class="efeito">
@@ -39,7 +40,7 @@
                     <li><a href="#" class="linha tracking-out-contract">
                             <span id="span5"></span>
                             TRABALHE <br> CONOSCO</a></li>
-                    <li><a href="#" class="linha tracking-out-contract">
+                    <li><a href="#contact" class="linha tracking-out-contract">
                             <span id="span5"></span>
                             CONTATO </a></li>
                 </ul>
@@ -49,12 +50,12 @@
 
         <section class="content blur-out-expand-fwd ">
             <h1>SYMTROPY</h1>
-            <a href="#sessao1" class="btn-neon">
+            <a href="#contact" class="btn-neon">
                 <span id="span1"></span>
                 <span id="span2"></span>
                 <span id="span3"></span>
                 <span id="span4"></span>
-                Explore
+                Fale Conosco
             </a>
             <p class="text-focus-in">Reorganizando Sistemas, Organizações e Pessoas.
                 <br> Transformamos Sistemas, Organizações, Vidas, <br> Tecnologia para reorganizar, <br>
@@ -162,9 +163,10 @@
 
 
         <article class="clientes">
-            <h2>Nossos Clientes</h2>
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-            <div class="swiper mySwiper">
+
+
+            <div class="swiper mySwiper logoClientes">
+                <h2>Nossos Clientes</h2>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="img/petrobras.png" />
@@ -188,6 +190,39 @@
                 <div class="swiper-pagination"></div>
             </div>
 
+            <div class="about-page">
+
+                <h2>O QUE DIZEM SOBRE NÓS</h2>
+
+                <div class=" about">
+                    <h2>Astro</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium expedita inventore
+                        placeat
+                        vero, iure explicabo.</p>
+                </div>
+                <div class=" about">
+                    <h2>Astro</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium expedita inventore
+                        placeat
+                        vero, iure explicabo.</p>
+                </div>
+                <div class=" about">
+                    <h2>Astro</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium expedita inventore
+                        placeat
+                        vero, iure explicabo.</p>
+                </div>
+                <div class=" about">
+                    <h2>Astro</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium expedita inventore
+                        placeat
+                        vero, iure explicabo.</p>
+                </div>
+            </div>
+
+            </div>
+
+            </div>
 
 
         </article>
@@ -247,15 +282,16 @@
         var swiper = new Swiper(".mySwiper", {
             effect: "cube",
             grabCursor: true,
+            loop: true,
             cubeEffect: {
                 shadow: true,
                 slideShadows: true,
-                shadowOffset: 20,
-                shadowScale: 0.94,
+                shadowOffset: 5,
+                shadowScale: 0.04,
 
             },
             autoplay: {
-                delay: 2500,
+                delay: 2000,
                 disableOnInteraction: false,
             },
             pagination: {
@@ -263,6 +299,15 @@
             },
         });
     </script>
+    <script>
+        var swiperAbout = new Swiper(".mySwiperAbout", {
+            slidesPerView: 1,
+            pagination: {
+                el: ".swiper-pagination-about",
+            },
+        });
+    </script>
+
 </body>
 
 </html>

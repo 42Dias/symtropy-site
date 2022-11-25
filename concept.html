@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="concept.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
 
     <title>Conceito</title>
@@ -42,9 +43,48 @@
             </div>
 
         </header>
+        <div class="">
 
+            <h2>O QUE DIZEM SOBRE NÓS</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide about ">
+                        <h2>Astro</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium expedita inventore
+                            placeat
+                            vero, iure explicabo.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2>Astro</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium expedita inventore
+                            placeat
+                            vero, iure explicabo.</p>
+                    </div>
+                    <div class="swiper-slide ">
+                        <h2>Astro</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium expedita inventore
+                            placeat
+                            vero, iure explicabo.</p>
+                    </div>
+                    <div class="swiper-slide ">
+                        <h2>Astro</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium expedita inventore
+                            placeat
+                            vero, iure explicabo.</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
 
     </main>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
 </body>
 
 </html>

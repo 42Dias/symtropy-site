@@ -36,9 +36,10 @@ header {
 }
 
 header .logo{
-  width: 80px;
-  height: 160px;
+  width: 100px;
+  height: 200px;
   padding-top: 20px;
+  z-index: 90;
 
 }
 
@@ -250,10 +251,13 @@ transition-delay: 0.8s;
 }
 
 .content h1{
-    font-size: 100px;
-    color: #fff;
+    font-size: 1000%;
+    background: -webkit-linear-gradient(rgb(55, 37, 107), rgb(105, 137, 167));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: 600;
-    text-shadow: black 0.1em 0.1em 0.2em;
+    /* -webkit-text-stroke:1px rgb(208, 183, 237); */
+    text-shadow: rgb(98, 64, 122) 0.1em 0.1em 0.2em;
 z-index: 30 !important;
 }
 .content p{
@@ -286,7 +290,7 @@ gap:5%;
     font-size: 15px;
     text-decoration: none;
     overflow: hidden;
-    transition: 0.5s;
+    transition: 0.8s;
     z-index: 90;
 }
 
@@ -455,17 +459,44 @@ width: 180px;
   width: 40px;
   height: 40px;
 }
-
 .clientes{
+  width: 100%;
+  display: inline-table;
+  /* flex-direction: column; */
+}
+
+.logoClientes{
   width: 50%;
-  position: relative;
-  display: inline-flex;
+  /* position: relative; */
+  display:block;
+
 }
 .clientes h2{
 color: aliceblue;
-text-shadow: #212434;
+text-shadow:  0.1em 0.1em 0.2em black;
 text-align: center;
+margin: auto auto 2.5% auto;
 }
+.about-page{
+  background-color: #212434;
+  width: 40%;
+  border-radius: 15px;
+  opacity: 90%;
+}
+
+.about{
+  width: 400px;
+  height: 150px;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  padding: 10px;
+  gap: 10px;
+  margin: 2.5% auto;
+}
+
 /* Efeitos  */
 
 .blur-out-expand-fwd{
@@ -473,9 +504,10 @@ text-align: center;
 	        animation: blur-out-expand-fwd 4s cubic-bezier(0.600, -0.280, 0.735, 0.045)  reverse forwards;
 }
 .tracking-out-contract:hover {
-	-webkit-animation: tracking-out-contract 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite alternate-reverse forwards;
-	        animation: tracking-out-contract 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite alternate-reverse forwards;
+	-webkit-animation: tracking-out-contract 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite alternate-reverse forwards;
+	        animation: tracking-out-contract 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite alternate-reverse forwards;
 }
+.rotate-vert-center{-webkit-animation:rotate-vert-center 4s cubic-bezier(.455,.03,.515,.955) infinite forwards;animation:rotate-vert-center 4s cubic-bezier(.455,.03,.515,.955) infinite forwards}
 
 .slide-in-elliptic-left-bck {
 	-webkit-animation: slide-in-elliptic-left-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
@@ -497,6 +529,7 @@ text-align: center;
   top: 50%;
   /* margin-left: -150px; */
   margin-top:2.5%;
+  margin-bottom: 5%;
   justify-content: center;
   align-content: center;
 }
@@ -505,7 +538,7 @@ text-align: center;
   background-color: rgba(255,255,255,0.1);
   backdrop-filter: blur(5px);
   /* background:linear-gradient(to right, rgb(69, 3, 95), rgb(101, 13, 135), rgb(100, 164, 161)); */
-opacity: 80%;
+  opacity: 80%;
   background-position: center center;
   background-size: cover;
   filter: drop-shadow(30px 22px 20px #FEFCFF);
@@ -521,6 +554,39 @@ opacity: 80%;
   margin-top: 25%;
 }
 
+
+/* SWIPER 2 */
+.swiper-about {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide-about {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  /* display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+} */}
+
+.swiper-slide-about img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /* Animaçoes */
 
@@ -617,6 +683,8 @@ opacity: 80%;
       opacity: 0;
     }
   }
+
+@-webkit-keyframes rotate-vert-center{0%{-webkit-transform:rotateY(0);transform:rotateY(0)}100%{-webkit-transform:rotateY(360deg);transform:rotateY(360deg)}}@keyframes rotate-vert-center{0%{-webkit-transform:rotateY(0);transform:rotateY(0)}100%{-webkit-transform:rotateY(360deg);transform:rotateY(360deg)}}
   
 @keyframes degrade-animado {
     0%{
