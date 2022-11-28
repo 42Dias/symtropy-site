@@ -45,11 +45,11 @@ header .logo{
 
 header ul li{
   list-style: none;
-  width: 90px;
+  width: 100px;
   height: 10px;
   display:inline-table;
   margin: auto;
-  padding: 9px;
+  /* padding: 9px; */
   z-index: 99 !important;
   /* margin-left: 100px; */
   
@@ -57,12 +57,13 @@ header ul li{
 }
 header ul li a{
   text-decoration: none;
+ margin: auto;
   width: 100px;
   height: 10px;
   color: #fff;
   font-size: 17px;
-  align-items: center;
-  justify-items: center;
+  /* align-items: center; */
+  /* justify-items: center; */
   z-index: 300 !important;
   
   
@@ -140,7 +141,7 @@ footer ul li a{
 /* Particulas */
 
 #particles-js, #particles-js:nth-child(4n)  {
-  height: 2700px !important;
+  height:3600px !important;
   width: 100vw !important;
   top: 0 !important;
   left: 0 !important;
@@ -159,7 +160,7 @@ canvas {
 .btn-neon{
     position: relative;
     display: inline-block;
-    width: 200px;
+    width: 250px;
     height: 40px;
     padding: 15px ;
     margin: auto;
@@ -235,7 +236,7 @@ transition-delay: 0.8s;
     width: 70%;
     
     /* position: absolute; */
-    margin: 10% auto;
+    margin: 5% auto;
     z-index: 30 !important;
     /* margin-left: 500px; */
 
@@ -251,18 +252,28 @@ transition-delay: 0.8s;
 }
 
 .content h1{
-    font-size: 1000%;
-    background: -webkit-linear-gradient(rgb(55, 37, 107), rgb(105, 137, 167));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 800%;
+    /* background: -webkit-linear-gradient(rgb(55, 37, 107), rgb(105, 137, 167)); */
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
     font-weight: 600;
     /* -webkit-text-stroke:1px rgb(208, 183, 237); */
     text-shadow: rgb(98, 64, 122) 0.1em 0.1em 0.2em;
-z-index: 30 !important;
+    /* animation: color-animado 3s infinite alternate; */
+    z-index: 30 !important;
+    /* -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out; */
+
+}
+.content h1 {
+  -webkit-animation: color-animado 6s alternate infinite;
+  animation: color-animado 6s alternate infinite;
 }
 .content p{
   font-size: 22px;
-  margin-top: 5%;
+  margin-top: 3%;
   /* margin: 5%; */
 /* padding: 1%; */
 gap:5%;
@@ -419,6 +430,8 @@ width: 180px;
 }
 .equipe{
   display: inline-flex;
+  position: relative;
+  margin:20%  auto;
   width: 98.5%;
 }
 
@@ -460,15 +473,22 @@ width: 180px;
   height: 40px;
 }
 .clientes{
-  width: 100%;
-  display: inline-table;
+  /* width: 100%; */
+  /* display: inline-table; */
   /* flex-direction: column; */
+  width: 100%;
+  height: 300px;
+  opacity: 80%;
+  border-radius: 15px;
+  margin: 5% auto;
+  display: flex;
+  position: relative;
 }
 
 .logoClientes{
   width: 50%;
-  /* position: relative; */
-  display:block;
+  position: relative;
+  /* display:block; */
 
 }
 .clientes h2{
@@ -480,8 +500,10 @@ margin: auto auto 2.5% auto;
 .about-page{
   background-color: #212434;
   width: 40%;
+  margin: auto  10%;
   border-radius: 15px;
   opacity: 90%;
+  /* position: relative; */
 }
 
 .about{
@@ -493,7 +515,7 @@ margin: auto auto 2.5% auto;
   background-color: rgba(255,255,255,0.1);
   border-radius: 15px;
   padding: 10px;
-  gap: 10px;
+  /* gap: 10px; */
   margin: 2.5% auto;
 }
 
@@ -525,10 +547,10 @@ margin: auto auto 2.5% auto;
   width: 300px;
   height: 300px;
   position: absolute;
-  left: 50%;
+  left: 0%;
   top: 50%;
   /* margin-left: -150px; */
-  margin-top:2.5%;
+  /* margin-top:2.5%; */
   margin-bottom: 5%;
   justify-content: center;
   align-content: center;
@@ -694,6 +716,30 @@ margin: auto auto 2.5% auto;
     100%{
         background-position-x: 100%;
     }
+}
+@-webkit-keyframes color-animado {
+  0%, 10% {
+  
+    color: rgb(164, 198, 193);
+    
+  }
+
+  30%, 50% {
+  
+   
+    color:rgb(190, 153, 209);
+  }
+
+  70%, 80%  {
+  
+    color:rgb(179, 131, 203)
+
+    
+  }
+  90%, 100%  {
+  
+    color:rgb(181, 125, 234)
+  }
 }
 
 @-webkit-keyframes slide-in-elliptic-left-bck {
