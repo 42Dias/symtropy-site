@@ -141,7 +141,7 @@ footer ul li a{
 /* Particulas */
 
 #particles-js, #particles-js:nth-child(4n)  {
-  height:3600px !important;
+  height:3400px !important;
   width: 100vw !important;
   top: 0 !important;
   left: 0 !important;
@@ -431,7 +431,7 @@ width: 180px;
 .equipe{
   display: inline-flex;
   position: relative;
-  margin:20%  auto;
+  margin:20%  auto 5% auto;
   width: 98.5%;
 }
 
@@ -544,11 +544,11 @@ margin: auto auto 2.5% auto;
 
 
 .swiper {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   position: absolute;
-  left: 0%;
-  top: 50%;
+  left: -5%;
+  top: 30%;
   /* margin-left: -150px; */
   /* margin-top:2.5%; */
   margin-bottom: 5%;
@@ -557,7 +557,7 @@ margin: auto auto 2.5% auto;
 }
 
 .swiper-slide {
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(255,255,254,0.1);
   backdrop-filter: blur(5px);
   /* background:linear-gradient(to right, rgb(69, 3, 95), rgb(101, 13, 135), rgb(100, 164, 161)); */
   opacity: 80%;
